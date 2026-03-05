@@ -1,6 +1,28 @@
-# Recetas de la Abuela - [Cardozo Peragallo Carlos Ignacio]
+# Recipe Explorer Web App
 
-Este proyecto es una aplicación web desarrollada en React que permite a los usuarios explorar recetas de cocina. Cada receta incluye detalles como ingredientes, pasos de preparación, tiempo de preparación, dificultad y más.
+Frontend Web App | React + Vite + React Router + Material UI
+
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-purple)
+![React Router](https://img.shields.io/badge/React%20Router-Routing-red)
+![Material UI](https://img.shields.io/badge/Material%20UI-UI%20Framework-007FFF)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+
+[Cardozo Peragallo Carlos Ignacio]
+
+Aplicación web desarrollada en React que permite explorar recetas de cocina.
+Cada receta incluye ingredientes, pasos de preparación, tiempo estimado y nivel de dificultad.
+
+La aplicación utiliza Context API para la gestión del estado global y Material UI para una interfaz moderna y responsiva.
+
+
+## Tech Stack
+
+- React
+- Vite
+- React Router
+- Material UI
+- Context API
 
 ## Características
 
@@ -48,12 +70,6 @@ _Error de receta no encontrada_
 _Detalle completo de la receta_
 
 
-## Tecnologías Utilizadas
-
-- React
-- React Router
-- Material-UI
-- Vite
 
 ## Autor
 
