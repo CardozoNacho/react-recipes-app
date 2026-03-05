@@ -1,7 +1,5 @@
 # Recipe Explorer Web App
 
-Frontend Web App | React + Vite + React Router + Material UI
-
 ![React](https://img.shields.io/badge/React-Frontend-blue)
 ![Vite](https://img.shields.io/badge/Vite-Build%20Tool-purple)
 ![React Router](https://img.shields.io/badge/React%20Router-Routing-red)
