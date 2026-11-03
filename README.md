@@ -1,80 +1,36 @@
-# Recipe Explorer Web App
+# Recipe Explorer | React, React Router y Material UI
 
-![React](https://img.shields.io/badge/React-Frontend-blue)
-![Vite](https://img.shields.io/badge/Vite-Build%20Tool-purple)
-![React Router](https://img.shields.io/badge/React%20Router-Routing-red)
-![Material UI](https://img.shields.io/badge/Material%20UI-UI%20Framework-007FFF)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+Proyecto académico individual de Carlos Ignacio Cardozo Peragallo. Frontend para explorar recetas desde un JSON local y consultar ingredientes y preparación.
 
-[Cardozo Peragallo Carlos Ignacio]
+## Implementación
 
-Aplicación web desarrollada en React que permite explorar recetas de cocina.
-Cada receta incluye ingredientes, pasos de preparación, tiempo estimado y nivel de dificultad.
+- React 19, React Router 7, Material UI 7 y Vite 5 según `package.json`.
+- Context API para recetas y estado de carga.
+- Rutas `/`, `/recetas` y `/recetas/:id`.
+- Mensaje para un id de receta inexistente.
+- Tema claro/oscuro guardado en `localStorage`.
 
-La aplicación utiliza Context API para la gestión del estado global y Material UI para una interfaz moderna y responsiva.
+La carga se simula con un temporizador de un segundo; no consume una API externa. El mensaje de receta inexistente no constituye una página HTTP 404 general.
 
+## Ejecución
 
-## Tech Stack
+Usar Node compatible con las dependencias del lockfile.
 
-- React
-- Vite
-- React Router
-- Material UI
-- Context API
+```bash
+git clone https://github.com/CardozoNacho/react-recipes-app.git
+cd react-recipes-app
+npm ci
+npm run dev
+```
 
-## Características
+Abrir la URL indicada por Vite. `npm run build` genera el bundle y `npm run preview` lo sirve localmente. No hay script de pruebas automatizadas.
 
-- **Listado de recetas**: Visualiza todas las recetas disponibles en un formato de grilla.
-- **Detalle de recetas**: Explora información detallada de cada receta, incluyendo ingredientes y pasos.
-- **Context API**: Manejo del estado global para compartir datos entre componentes.
-- **Material-UI**: Diseño moderno y responsivo utilizando componentes de Material-UI.
+## Estructura
 
-## Instalación
+`src/components/`: componentes; `src/contexts/`: estado; `src/data/recetas.json`: datos; `src/pages/`: pantallas; `src/theme.js`: tema. `index.html` está en la raíz.
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/CardozoNacho/ReactTPProgIV.git
-   ```
-2. Navega al directorio del proyecto:
-   ```bash
-   cd ReactTPProgIV
-   ```
-3. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-4. Inicia el servidor de desarrollo:
-   ```bash
-   npm run dev
-   ```
+## Capturas
 
-## Estructura del Proyecto
-
-- `src/components`: Contiene los componentes reutilizables como tarjetas de recetas y listas.
-- `src/contexts`: Manejo del estado global con Context API.
-- `src/data`: Datos estáticos como recetas en formato JSON.
-- `src/pages`: Páginas principales de la aplicación.
-- `public`: Archivos estáticos como imágenes y el archivo `index.html`.
-
-## Screenshots
-
-![Listado de recetas](screenshots/Index.png)
-_Página principal_
-
-![Error 404](screenshots/RecetaNoEncontrada.png)
-_Error de receta no encontrada_
-
-![Detalle](screenshots/RecetasId.png)
-_Detalle completo de la receta_
-
-
-
-## Autor
-
-- Cardozo Peragallo Carlos Ignacio
-- carloscardozoperagallo@alu.frp.utn.edu.ar
-- GitHub: [@CardozoNacho](https://github.com/CardozoNacho)
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas contribuir, por favor crea un fork del repositorio y envía un pull request con tus cambios.
+![Listado](screenshots/Index.PNG)
+![Receta inexistente](screenshots/RecetaNoEncontrada.PNG)
+![Detalle](screenshots/RecetasId.PNG)
